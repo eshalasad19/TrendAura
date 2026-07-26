@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /config/
+Disallow: /web/config/
+Disallow: /web/checkout.php
+Disallow: /web/view-cart.php
+Disallow: /web/my-account.php
+Disallow: /web/setting.php
+Disallow: /web/update-profile.php
+
+Sitemap: https://YOUR-DOMAIN.com/sitemap.php

@@ -36,13 +36,13 @@ if (isset($_POST['login'])) {
         header("Location: home.php");
         exit();
       } else {
-        echo "<script>adminToast('Access denied. Only Admin, Product Manager, and Order Dispatcher can log in.', 'error');</script>";
+        $loginError = 'Access denied. Only Admin, Product Manager, and Order Dispatcher can log in.';
       }
     } else {
-      echo "<script>adminToast('Invalid password.', 'error');</script>";
+      $loginError = 'Invalid password.';
     }
   } else {
-   echo "<script>adminToast('User not found.', 'error');</script>";
+   $loginError = 'User not found.';
   }
 }
 ?>
@@ -124,6 +124,9 @@ if (isset($_POST['login'])) {
   <script src="../assets/js/jquery-3.6.3.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="../assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <?php if (!empty($loginError)): ?>
+  <script>adminToast('<?php echo addslashes($loginError); ?>', 'error');</script>
+  <?php endif; ?>
 </body>
 
 </html>

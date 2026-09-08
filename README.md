@@ -77,8 +77,8 @@ orders, and users.
      `APP_ENV=production` when deployed live (hides them)
 
 4. **Visit the site:**
-   - Storefront: `http://localhost/TrendAura/web/home.php`
-   - Admin panel: `http://localhost/TrendAura/admin/login.php`
+   - Storefront: `https://trendaura.payasguest.com/web/home.php`
+   - Admin panel: `https://trendaura.payasguest.com/admin/login.php`
 
 ---
 
